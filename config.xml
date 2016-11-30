@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.euniverse.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Pizza App</name>
+    <name>Juego App</name>
     <description>
-        Almacen de pizzas
+        Empire
     </description>
     <author email="romero.juan.ignacio.1294@gmail.com" href="http://www.responsivewebdesign.com.ar">
         Juan Romero
