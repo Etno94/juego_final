@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Juego Final</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css">
+<!-- <link rel="stylesheet" href="C.min.css"> -->
+<link rel="stylesheet" href="jquery.mobile.icons.min.css">
+<script src="jquery-1.12.2.min.js"></script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="app.js"></script>
+</head>
+<body>
+<div id="splash" data-role="page">
+	<div data-role="content">
+    	<a href="#inicio"><img src="images/splashapp.jpg" alt="logo" style="width:100%;" /></a>
+    </div>
+</div>
+
+<div id="inicio" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Empire</h1>
+    </div>
+    
+    <div data-role="content" data-theme="c">
+        <a href="#recolectar" class="ui-btn ui-btn-b ui-shadow ui-btn-icon-left">Recolectar recursos</a>
+        <a href="#vender" class="ui-btn ui-btn-b ui-shadow ui-btn-icon-left">Vender Recursos</a>
+        <a href="#comprar" class="ui-btn ui-btn-b ui-shadow ui-btn-icon-left">Comprar Recursos</a>
+        <a href="#stats" class="ui-btn ui-btn-b ui-shadow ui-btn-icon-left">Edificios</a>
+    </div>
+	<div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        
+    	</div>
+    </div>
+</div>
+
+<div id="recolectar" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Junta recursos!</h1>
+    </div>
+	<div data-role="content">
+    	<p id="piedra_recolectar">Piedra: </p>
+        <form id="picar_piedra">
+        <input type="submit" id="submit_piedra" value="Picar Piedra"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow" id="picar_piedra">Picar piedra</a>-->
+        <!--<p id="madera_recolectar">Madera: </p>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Talar madera</a>-->
+        <p id="hierro_recolectar">Hierro: </p>
+        <form id="picar_hierro">
+        <input type="submit" id="submit_piedra" value="Picar Hierro"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow">Picar Hierro</a>-->
+        <p id="carne_recolectar">Carne: </p>
+        <form id="cortar_carne">
+        <input type="submit" id="submit_piedra" value="Cortar Carne"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow">Cortar Carne</a>-->
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Volver</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="vender" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Vende recursos!</h1>
+    </div>
+	<div data-role="content">
+    	<p>Piedra($2/u): </p>
+        <form id="vender_piedra">
+        <input type="submit" id="submit_piedra" value="vender Piedra"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow" id="picar_piedra">Picar piedra</a>-->
+        <!--<p id="madera_recolectar">Madera: </p>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Talar madera</a>-->
+        <p>Hierro($5/u): </p>
+        <form id="vender_hierro">
+        <input type="submit" id="submit_piedra" value="vender Hierro"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow">Picar Hierro</a>-->
+        <p>Carne($7/u): </p>
+        <form id="vender_carne">
+        <input type="submit" id="submit_piedra" value="vender Carne"/>
+        </form>
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Volver</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="comprar" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Comprar!</h1>
+    </div>
+	<div data-role="content">
+    	
+        <p>Piedra($5/u): </p>
+        <form id="Comprar_piedra">
+        <input type="submit" id="submit_piedra" value="Comprar Piedra"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow" id="picar_piedra">Picar piedra</a>-->
+        <!--<p id="madera_recolectar">Madera: </p>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Talar madera</a>-->
+        <p>Hierro($12/u): </p>
+        <form id="Comprar_hierro">
+        <input type="submit" id="submit_piedra" value="Comprar Hierro"/>
+        </form>
+        <!--<a href="#" class="ui-btn ui-btn-a ui-shadow">Picar Hierro</a>-->
+        <p>Carne($17/u): </p>
+        <form id="Comprar_carne">
+        <input type="submit" id="submit_piedra" value="Comprar Carne"/>
+        </form>
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Volver</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="stats" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Edificios</h1>
+    </div>
+	<div data-role="content">
+    	
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Construir Casa</a>
+		<a href="#" class="ui-btn ui-btn-a ui-shadow">Construir Granja</a>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Construir Herreria</a>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Construir Puerto</a>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Construir Ejercito</a>
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Volver</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="reserva" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Elegir Local</h1>
+    </div>
+	<div data-role="content">
+    	
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Caballito</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Palermo</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Colegiales</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Belgrano</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Villa Urquiza</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">Tortugas Mall</a>
+        <a href="#mesa" class="ui-btn ui-btn-a ui-shadow">DOT Baires</a>
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="pedido-pizza" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Hacer Pedido</h1>
+        <div data-role="navbar">
+        	<ul>
+            	<li><a href="#pedido-pizza">Pizzas</a></li>
+                <li><a href="#pedido-empanada">Empanadas</a></li>
+                <li><a href="#pedido-bebida">Bebidas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="ui-field-contain">
+        	<label for="pizza1">Pizza 1</label>
+            <input name="pizza1" id="pizza1" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="pizza2">Pizza 2</label>
+            <input name="pizza2" id="pizza2" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="pizza3">Pizza 3</label>
+            <input name="pizza3" id="pizza3" value="" type="number">
+        </div>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Actualizar pedido</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Finalizar pedido</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+
+<div id="pedido-empanada" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Hacer Pedido</h1>
+        <div data-role="navbar">
+        	<ul>
+            	<li><a href="#pedido-pizza">Pizzas</a></li>
+                <li><a href="#pedido-empanada">Empanadas</a></li>
+                <li><a href="#pedido-bebida">Bebidas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="ui-field-contain">
+        	<label for="empa1">Empanada 1</label>
+            <input name="empa1" id="empa1" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="empa2">Empanada 2</label>
+            <input name="empa2" id="empa2" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="empa3">Empanada 3</label>
+            <input name="empa3" id="empa3" value="" type="number">
+        </div>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow">Actualizar pedido</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Finalizar pedido</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+
+<div id="pedido-bebida" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Hacer Pedido</h1>
+        <div data-role="navbar">
+        	<ul>
+            	<li><a href="#pedido-pizza">Pizzas</a></li>
+                <li><a href="#pedido-empanada">Empanadas</a></li>
+                <li><a href="#pedido-bebida">Bebidas</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="content">
+        <div class="ui-field-contain">
+        	<label for="bebida1">Bebida 1</label>
+            <input name="bebida1" id="bebida1" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="bebida2">Bebida 2</label>
+            <input name="bebida2" id="bebida2" value="" type="number">
+        </div>
+        <div class="ui-field-contain">
+        	<label for="bebida3">Bebida 3</label>
+            <input name="bebida3" id="bebida3" value="" type="number">
+        </div>
+        <a href="#" class="ui-btn ui-btn-a ui-shadow" id="updatePedido">Actualizar pedido</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow" id="endPedido">Finalizar pedido</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+
+<div id="ver" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Reservas</h1>
+    </div>
+    <div data-role="content">
+        <a href="#" id="verPedido" class="ui-btn ui-btn-a ui-shadow">Ver Ultimo Pedido hecho</a>
+        <a href="#" id="verReserva" class="ui-btn ui-btn-a ui-shadow">Ver Ultima Reserva hecha</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+
+<div id="mesa" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Reservar Mesas</h1>
+    </div>
+	<div data-role="content">
+        <form id="form_reserva">
+        	<label for="personas" id="disponible" style="color:#FFF">Lugares libres: </label>
+     		<label for="personas" style="color:#FFF">Cuantas personas son?</label>
+     		<input type="number" data-clear-btn="true" name="personas" id="input_personas" value="">
+			<label for="hora" style="color:#FFF">Fecha a reservar</label>
+     		<input type="date" data-clear-btn="true" name="hora" id="input_fecha" value="">
+			<input type="submit" id="submit_disp" value="reservar"/>
+		</form>
+    </div> 
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>   
+</div>
+
+<div id="comida" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Hacer Pedido</h1>
+    </div>
+    <div data-role="content">
+        <a href="#bebida" class="ui-btn ui-btn-a ui-shadow">Empanada de Carne</a>
+        <a href="#bebida" class="ui-btn ui-btn-a ui-shadow">Empanada de Jamon y Queso</a>
+        <a href="#bebida" class="ui-btn ui-btn-a ui-shadow">Empanada de Humita</a>
+        <a href="#bebida" class="ui-btn ui-btn-a ui-shadow">Empanada de Pollo</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+
+<div id="bebida" data-role="page" data-theme="c">
+	<div data-role="header">
+    	<h1>Hacer Pedido</h1>
+    </div>
+    <div data-role="content">
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Cerveza</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Coca Cola</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Sprite</a>
+        <a href="#inicio" class="ui-btn ui-btn-a ui-shadow">Fanta Naranja</a>
+    </div>
+    <div data-role="footer" style="overflow:hidden;">
+    	<div data-role="navbar">
+        <ul>
+            <li><a href="#inicio" class="ui-btn ui-btn-icon-left ui-icon-home">Home</a></li>
+        </ul>
+    	</div>
+    </div>    
+</div>
+</body>
+</html>
